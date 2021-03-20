@@ -1,4 +1,5 @@
 html{
+    font-family: 'Cairo', sans-serif;
     font-size: 1rem;
 }
 #home
@@ -21,12 +22,49 @@ html{
 .navbar
 {
     width: 85%;
+    position: relative;
 }
 .navbar .navbar-nav .nav-link
 {
     color:#fff !important;
     font-size: 1.3rem;
 }
+.navbar ul.navbar-nav > li > a
+{
+    position: relative;
+}
+.navbar ul.navbar-nav > li > a:before {
+    content: "";
+    width: 15px;
+    position: absolute;
+    height: 2px;
+    bottom: 5px;
+    left: 8px;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar ul.navbar-nav > li > a:hover:before
+{
+    visibility: visible;
+    width: 75%;
+}
+.navbar ul.navbar-nav a.active:before
+{
+    visibility: visible;
+    width: 80%;
+}
+/*.navbar .nav-item:hover*/
+/*{*/
+/*    position: relative;*/
+/*    bottom: 0px;*/
+/*    right: 30px;*/
+/*    background-color: #fff;*/
+/*    width: 50px;*/
+/*    height: 3px;*/
+/*    z-index: 2;*/
+/*    box-shadow:  1px 0 1px 0 rgba(0 ,0 ,0 ,0.1);*/
+/*}*/
 .navbar .navbar-brand{
     font-size: 30px;
     font-weight: 600;
@@ -61,7 +99,6 @@ html{
     display: block;
     position: relative;
     float: left;
-    
 }
 .dropdown-menu li ul { display: none; }
 .dropdown-menu ul li a 
@@ -84,7 +121,6 @@ html{
 .dropdown-menu li:hover li a:hover { color: #0d6efd; } 
 .dropdown-menu .dropdown-menu-deep li ul li { border-top: 0; }
 .dropdown-menu ul:after { clear: both; }
-
 .slider-text
 {
     width: 50%;
@@ -106,7 +142,7 @@ html{
     font-size: 3rem;
     content: "|";
     position: relative;
-    /*animation: caption 13s 1s infinite;*/
+    animation: caption 13s 1s infinite;
 }
 @keyframes caption
 {
@@ -219,12 +255,10 @@ html{
     width: 100px;
     bottom: -12px;
 }
-
 .right-about
 {
     font-size: 1.27rem;
 }
-
 .services .services-title h2
 {
     font-size: 2.5rem;
@@ -384,8 +418,6 @@ html{
 }
 
 
-
-
 /*.demo{ background-color: #697583; }*/
 .show-modal{
     background-color: white;
@@ -511,6 +543,7 @@ html{
     border: 0;
     margin: auto;
 }
+
 .blog .blog-title h2
 {
     font-size: 2.5rem;
@@ -634,14 +667,5 @@ html{
 }
 .footer h3 span{font-size: 1.5rem}
 
-
-
-@media screen and (max-width: 576px)
-{
-    html
-    {
-        font-size: 0.6rem;
-    }
-}
 
 

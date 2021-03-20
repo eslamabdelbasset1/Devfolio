@@ -4,9 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
         <title>DevFolio</title>
     </head>
     <body>
@@ -18,8 +21,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
@@ -68,8 +71,6 @@
                     <div class="col-lg-12 col-md-6 col-sm-2">
                         <h1>I am Morgan Freeman</h1>
                         <div class="caption-animation"><h2></h2></div>
-                        <!-- <h4 class="text" data-text="Designer">Professional Web&nbsp;</h4> -->
-                        <!-- <h4>Professional Web Designer</h4> -->
                     </div>
                 </div>
             </div>
@@ -201,7 +202,7 @@
             <div class="overlay-mf"></div>
             <div class="container">
                 <div class="row m-auto">
-                    <div class="col d-flex text-center">
+                    <div class="col-lg-3 col-sm-6 text-center">
                         <div class="counter mx-5">
                             <i class="fas fa-check fa-5x"></i>
                             <div class="counter-body py-3">
@@ -210,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex text-center">
+                    <div class="col-lg-3 col-sm-6 text-center">
                         <div class="counter mx-5">
                             <i class="fas fa-journal-whills fa-5x"></i>
                             <div class="counter-body py-3">
@@ -219,18 +220,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex text-center">
+                    <div class="col-lg-3 col-sm-6 text-center">
                         <div class="counter mx-5">
-                            <i class="fas fa-user-friends"></i>
+                            <i class="fas fa-user-friends fa-5x"></i>
                             <div class="counter-body py-3">
                                 <h5>550</h5>
                                 <h5 class="counter-title">TOTAL CLIENTS</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex text-center">
+                    <div class="col-lg-3 col-sm-6 text-center">
                         <div class="counter mx-5">
-                            <i class="fas fa-award"></i>
+                            <i class="fas fa-award fa-5x"></i>
                             <div class="counter-body py-3">
                                 <h5>48</h5>
                                 <h5 class="counter-title">AWARD WON</h5>
@@ -440,7 +441,7 @@
         </section>
 
         <section class="testimonials">
-            <div class="container my-5">
+            <div class="container-fluid my-5">
                 <!--Carousel Wrapper-->
                 <div id="multi-item-example" class="carousel slide carousel-multi-item m-auto w-50 py-5" data-ride="carousel">
                     <!--Indicators-->
