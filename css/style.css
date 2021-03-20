@@ -565,20 +565,76 @@ html{
     border-radius: 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
-.contact .contact-title
+.contact .left-contact
 {
-    margin-right: 0;
+    position: relative;
 }
-.contact .contact-title h2::before
+.contact .left-contact h2
+{
+    padding-left: 20px;
+}
+
+.contact .left-contact .card-body button
+{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    border-radius: 5px;
+}
+.contact .left-contact h2::before, .right-contact h2::before
 {
     content: "";
     position: absolute;
     width: 15%;
     height: 3px;
     background-color: #0078ff;
-    bottom: 0;
-    left: 3%;
+    top: 12%;
+    left: 4%;
 }
+.contact .right-contact ul{
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 35px;
+}
+.contact .right-contact .contact-captions li,
+.contact .right-contact .contact-icons li
+{
+    list-style: none;
+}
+.contact .right-contact .contact-captions li i{
+    color: #0078ff;
+}
+.contact .right-contact .contact-captions li span{
+    padding-left: 10px;
+}
+.contact .right-contact .contact-icons li i{
+    margin-right: 30px;
+    padding: 7px;
+    font-size: 1.4rem;
+    width: 35px;
+    height: 35px;
+    justify-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0078ff;
+}
+.contact .right-contact .contact-icons li .fab:hover
+{
+    transition: all 600ms ease;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+.footer
+{
+    background-color: #0078ff;
+    color: white;
+}
+.footer h3,h4
+{
+    font-size: 1rem;
+}
+.footer h3 span{font-size: 1.5rem}
+
+
 
 @media screen and (max-width: 576px)
 {
