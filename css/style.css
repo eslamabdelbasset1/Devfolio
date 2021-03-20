@@ -1,7 +1,25 @@
+/* ---------------------------------------
+        CSS INDEX
+        - Home
+        - About
+        - Services
+        - Section-counter
+            . Modal
+        - Portfolio
+        - Testimonials
+        - Blog
+        - Contact
+        - Footer
+----------------------------------------- */
+/*------------------ Start Html ------------*/
 html{
     font-family: 'Cairo', sans-serif;
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
+/*------------------ Start Html ------------*/
+
+/*------------------ Start Navigations ------------*/
 #home
 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -18,6 +36,7 @@ html{
 #services
 {
     background-color: #F5F5F5;
+    transition: all 0.3s ease-in-out 0s;
 }
 .navbar
 {
@@ -54,17 +73,6 @@ html{
     visibility: visible;
     width: 80%;
 }
-/*.navbar .nav-item:hover*/
-/*{*/
-/*    position: relative;*/
-/*    bottom: 0px;*/
-/*    right: 30px;*/
-/*    background-color: #fff;*/
-/*    width: 50px;*/
-/*    height: 3px;*/
-/*    z-index: 2;*/
-/*    box-shadow:  1px 0 1px 0 rgba(0 ,0 ,0 ,0.1);*/
-/*}*/
 .navbar .navbar-brand{
     font-size: 30px;
     font-weight: 600;
@@ -74,7 +82,6 @@ html{
 {
     color: #fff !important;
 }
-
 .dropdown-menu .dropdown-menu-deep
 {
     position: relative;
@@ -110,7 +117,6 @@ html{
   color: #000;
   padding-right: 30px;
 }
-
 .dropdown-menu ul li a:hover { color: #4e4e4e; }
 .dropdown-menu li:hover > ul 
 {
@@ -224,7 +230,9 @@ html{
     98%{content: "Ph|";}
     100%{content: "P|";}
 }
+/*------------------ End Navigations ------------*/
 
+/*------------------ Start About ------------*/
 .about .shadow
 {
     padding: 3rem 1.25rem;
@@ -259,6 +267,9 @@ html{
 {
     font-size: 1.27rem;
 }
+/*------------------ End About ------------*/
+
+/*------------------ Start Services ------------*/
 .services .services-title h2
 {
     font-size: 2.5rem;
@@ -309,8 +320,9 @@ html{
     background-color: #0078ff;
     box-shadow: 0 0 0 10px #cde1f8;
 }
+/*------------------ End Services ------------*/
 
-
+/*------------------ Start Section-counter ------------*/
 .section-counter
 {
     background-image: url("../images/post-3.jpg");
@@ -348,7 +360,9 @@ html{
 {
     font-size: .9rem;
 }
+/*------------------ End Section-counter ------------*/
 
+/*------------------ Start Portfolio ------------*/
 .portfolio .portfolio-title h2
 {
     font-size: 2.5rem;
@@ -416,9 +430,9 @@ html{
 {
     transform: scale(1.07);
 }
+/*------------------ End Portfolio ------------*/
 
-
-/*.demo{ background-color: #697583; }*/
+/*------------------ Start Modal ------------*/
 .show-modal{
     background-color: white;
     border: 0;
@@ -510,7 +524,9 @@ html{
     border: none;
     box-shadow: 0 0 10px 0 #3d5962 inset, 0 0 10px 1px #3d5962;
 }
+/*------------------ End Modal ------------*/
 
+/*------------------ Start Testimonials ------------*/
  .testimonials
  {
      background: linear-gradient(rgba(77, 160, 255, 0.8), rgba(77, 16, 255, 0.8)),
@@ -522,7 +538,6 @@ html{
      border-radius: 0;
      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
  }
-
 .testimonials .carousel .carousel-item img
 {
     border-radius: 50%;
@@ -543,13 +558,14 @@ html{
     border: 0;
     margin: auto;
 }
+/*------------------ End Testimonials ------------*/
 
+/*------------------ Start Blog ------------*/
 .blog .blog-title h2
 {
     font-size: 2.5rem;
     font-weight: bold;
 }
-
 .blog .card
 {
     position: relative;
@@ -586,7 +602,9 @@ html{
     bottom: 0;
     left: 49%;
 }
+/*------------------ End Blog ------------*/
 
+/*------------------ Start Contact ------------*/
 .contact
 {
     background: linear-gradient(rgba(77, 160, 255, 0.8), rgba(77, 16, 255, 0.8)),
@@ -606,7 +624,6 @@ html{
 {
     padding-left: 20px;
 }
-
 .contact .left-contact .card-body button
 {
     position: absolute;
@@ -656,6 +673,9 @@ html{
     background-color: #0078ff;
     box-shadow: 0 0 0 10px #cde1f8;
 }
+/*------------------ End Contact ------------*/
+
+/*------------------ Start Footer ------------*/
 .footer
 {
     background-color: #0078ff;
@@ -666,6 +686,6 @@ html{
     font-size: 1rem;
 }
 .footer h3 span{font-size: 1.5rem}
-
+/*------------------ End Footer ------------*/
 
 
